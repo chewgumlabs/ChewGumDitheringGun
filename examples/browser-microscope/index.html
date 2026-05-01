@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChewGum Dithering Gun</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="window" data-title="ChewGum Dithering Gun">
+        <p class="eyebrow">ChewGum Dithering Gun v0.0.1</p>
+      </header>
+
+      <section id="drop-zone" class="window drop-zone" data-title="Source Intake">
+        <p>Drop a PNG, JPG, or WEBP here.</p>
+        <p class="small">The image stays in this browser. Nothing uploads.</p>
+      </section>
+
+      <section class="window controls" data-title="Controls" aria-label="Dithering controls">
+        <label>
+          Image
+          <input id="file-input" type="file" accept="image/png,image/jpeg,image/webp">
+        </label>
+        <label>
+          Algorithm
+          <select id="algorithm">
+            <option value="nearest">Nearest color</option>
+            <option value="ordered-bayer-4" selected>Ordered Bayer</option>
+            <option value="floyd-steinberg">Floyd-Steinberg</option>
+            <option value="atkinson">Atkinson</option>
+          </select>
+        </label>
+        <label>
+          Palette
+          <select id="palette"></select>
+        </label>
+        <label>
+          Resolution
+          <select id="resolution">
+            <option value="24">24 x 24</option>
+            <option value="48">48 x 48</option>
+            <option value="96" selected>96 x 96</option>
+            <option value="144">144 x 144</option>
+            <option value="192">192 x 192</option>
+            <option value="256">256 x 256</option>
+          </select>
+        </label>
+        <button id="load-sample" type="button">Bring Back Gum</button>
+        <button id="export" type="button">Export PNG</button>
+      </section>
+
+      <section class="stage-grid">
+        <article class="window stage-card" data-title="Source">
+          <h2>Source</h2>
+          <canvas id="source-canvas" width="512" height="512" aria-label="Source image preview"></canvas>
+        </article>
+        <article class="window stage-card" data-title="Dithered Output">
+          <h2>Dithered Output</h2>
+          <canvas id="output-canvas" width="512" height="512" aria-label="Dithered output preview"></canvas>
+        </article>
+      </section>
+    </main>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

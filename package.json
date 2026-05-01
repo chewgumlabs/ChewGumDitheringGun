@@ -1,0 +1,40 @@
+{
+  "name": "@chewgum/dithering-gun",
+  "version": "0.0.1",
+  "description": "A small browser microscope for putting art under resolution, palette, and dithering constraints.",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.js",
+    "./canvas": "./src/canvas.js",
+    "./dither": "./src/dither.js",
+    "./palettes": "./src/palettes.js"
+  },
+  "main": "./src/index.js",
+  "files": [
+    "src",
+    "examples/browser-microscope",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "dev": "node scripts/serve-example.mjs",
+    "test": "node test/core.test.js"
+  },
+  "license": "MIT",
+  "author": "Shane Curry",
+  "homepage": "https://shanecurry.com/lab/toys/chew-dither-lab/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chewgumlabs/ChewGumDitheringGun.git"
+  },
+  "keywords": [
+    "dithering",
+    "palette-reduction",
+    "pixel-art",
+    "canvas",
+    "image-processing",
+    "creative-coding",
+    "esm"
+  ]
+}
+
