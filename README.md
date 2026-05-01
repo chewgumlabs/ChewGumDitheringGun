@@ -21,6 +21,15 @@ This repo was extracted from the Chew Dither Lab toy:
 
 https://shanecurry.com/lab/toys/chew-dither-lab/
 
+## Example Output
+
+The same source image can remain recognizable or break apart depending on the
+resolution, palette, and dithering rule.
+
+| 24 x 24, Floyd-Steinberg, Game Boy | 192 x 192, Atkinson, NES RGB |
+| --- | --- |
+| ![Gum reduced to 24 x 24 pixels with Floyd-Steinberg dithering and the Game Boy 4-color palette.](docs/screenshots/gum-floyd-gameboy-24.png) | ![Gum reduced to 192 x 192 pixels with Atkinson dithering and the NES RGB 64-color palette.](docs/screenshots/gum-atkinson-nes-192.png) |
+
 ## Install
 
 This is dependency-free ESM with no build step. The first public install path is
