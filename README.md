@@ -17,9 +17,9 @@ hardware emulation. The goal is to make the tradeoff visible:
 > Resolution decides how many image decisions must be made. Palette size
 > decides how many color choices each decision can compare against.
 
-This repo was extracted from the Chew Dither Lab toy:
+This repo was extracted from the Dithering Heights toy:
 
-https://shanecurry.com/lab/toys/chew-dither-lab/
+https://shanecurry.com/lab/toys/dithering-heights/
 
 ## Example Output
 

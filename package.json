@@ -22,7 +22,7 @@
   },
   "license": "MIT",
   "author": "Shane Curry",
-  "homepage": "https://shanecurry.com/lab/toys/chew-dither-lab/",
+  "homepage": "https://shanecurry.com/lab/tools/chewgum-dithering-gun/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chewgumlabs/ChewGumDitheringGun.git"
@@ -37,4 +37,3 @@
     "esm"
   ]
 }
-
